@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sakshi Agarwal — Brand & Organic Marketing</title>
+<meta name="description" content="Sakshi Agarwal — Social Media Manager based in Gurugram. Assistant Manager, Brand & Organic Marketing at Alike, with 5+ years leading social strategy, content, and brand campaigns across Instagram, Facebook, and LinkedIn.">
+<meta property="og:title" content="Sakshi Agarwal — Brand & Organic Marketing">
+<meta property="og:description" content="Social Media Manager with 5+ years leading brand & organic strategy, content, and campaigns for consumer and D2C brands.">
+<meta property="og:type" content="profile">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23101114'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='58' fill='%23C6FF4D' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -98,10 +104,22 @@
   .nav.dark-mode .nav-cta{background:var(--accent-2); color:#101114;}
   .nav-cta:hover{transform:translateY(-2px);}
   .nav-burger{display:none;}
+  .nav-links.mobile-open{
+    display:flex; flex-direction:column; align-items:flex-start; gap:0;
+    position:fixed; top:60px; left:0; right:0; z-index:199;
+    background:#fff; padding:8px 22px 18px; border-bottom:1px solid var(--line);
+    box-shadow:0 16px 30px rgba(16,17,20,0.08);
+  }
+  .nav.dark-mode .nav-links.mobile-open{background:#0D0E10;}
+  .nav-links.mobile-open a{padding:14px 0; width:100%; opacity:1;}
   @media(max-width:860px){
     .nav{padding:14px 20px;}
     .nav-links{display:none;}
-    .nav-burger{display:block; font-size:13px; font-weight:600; padding:9px 16px; border:1px solid currentColor; border-radius:100px;}
+    .nav-burger{
+      display:flex; align-items:center; justify-content:center; width:38px; height:38px;
+      border:1px solid currentColor; border-radius:10px; flex-shrink:0;
+    }
+    .nav-burger svg{width:16px; height:16px;}
   }
 
   /* ---------- HERO ---------- */
@@ -413,6 +431,9 @@
     <a href="#education" data-nav>Education</a>
     <a href="#words" data-nav>Words</a>
   </div>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+    <svg id="burgerIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+  </button>
   <a class="nav-cta" href="https://www.linkedin.com/in/sakshiagarwal1708" target="_blank" rel="noopener">Let's connect</a>
 </nav>
 
@@ -442,7 +463,8 @@
     </div>
     <div class="hero-card">
       <div class="hero-photo">
-        <img src="assets/photos/profile.jpg" alt="Sakshi Agarwal" onerror="this.onerror=null;this.src='https://media.licdn.com/dms/image/v2/D5603AQHmdPzUXC0Lzw/profile-displayphoto-crop_800_800/B56Z2wBoR5I8AM-/0/1776774717940?e=1790208000&v=beta&t=t7hiQXxv4yBMhAUB7s4OKtFND6rGgl3-eZN2WC7TRr0';">
+        <img src="assets/photos/profile.jpg" alt="Sakshi Agarwal" onerror="if(!this.dataset.stage){this.dataset.stage='2';this.src='https://media.licdn.com/dms/image/v2/D5603AQHmdPzUXC0Lzw/profile-displayphoto-crop_800_800/B56Z2wBoR5I8AM-/0/1776774717940?e=1790208000&v=beta&t=t7hiQXxv4yBMhAUB7s4OKtFND6rGgl3-eZN2WC7TRr0';}else{this.style.display='none';this.nextElementSibling.style.display='flex';}">
+        <div style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; background:var(--ink); color:var(--accent-2); font-family:'Fraunces',serif; font-weight:600; font-size:72px;">SA</div>
         <div class="hero-photo-tag"><span>Assistant Manager, Brand & Organic — Alike</span><span class="pulse-dot"></span></div>
       </div>
     </div>
@@ -826,7 +848,8 @@
     </div>
     <div class="quote-card reveal">
       <div class="quote-photo">
-        <img src="assets/photos/rahul-tak.jpg" alt="Rahul Tak" onerror="this.onerror=null;this.src='https://media.licdn.com/dms/image/v2/D4D03AQFNrbcWVkoCDA/profile-displayphoto-shrink_800_800/B4DZdvllB.GgAc-/0/1749923812499?e=1790208000&v=beta&t=s5K8LBgw_mcJFYVKrYIilfC1huo88YIUNN_H6IGRBXM';">
+        <img src="assets/photos/rahul-tak.jpg" alt="Rahul Tak" onerror="if(!this.dataset.stage){this.dataset.stage='2';this.src='https://media.licdn.com/dms/image/v2/D4D03AQFNrbcWVkoCDA/profile-displayphoto-shrink_800_800/B4DZdvllB.GgAc-/0/1749923812499?e=1790208000&v=beta&t=s5K8LBgw_mcJFYVKrYIilfC1huo88YIUNN_H6IGRBXM';}else{this.style.display='none';this.nextElementSibling.style.display='flex';}">
+        <div style="display:none; width:120px; height:120px; border-radius:50%; border:4px solid var(--accent-2); align-items:center; justify-content:center; background:var(--ink); color:var(--accent-2); font-family:'Fraunces',serif; font-weight:600; font-size:36px;">RT</div>
       </div>
       <div>
         <span class="quote-mark">"</span>
@@ -869,6 +892,20 @@
     const fallback = img.nextElementSibling;
     if(fallback) fallback.style.display = 'flex';
   }
+
+  // Mobile hamburger menu
+  const navBurger = document.getElementById('navBurger');
+  const navLinksEl = document.getElementById('navLinks');
+  const burgerIcon = document.getElementById('burgerIcon');
+  function setMenu(open){
+    navLinksEl.classList.toggle('mobile-open', open);
+    navBurger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burgerIcon.innerHTML = open
+      ? '<path d="M6 6l12 12M18 6L6 18"/>'
+      : '<path d="M3 6h18M3 12h18M3 18h18"/>';
+  }
+  navBurger.addEventListener('click', ()=> setMenu(!navLinksEl.classList.contains('mobile-open')));
+  navLinksEl.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=> setMenu(false)));
 
   // Nav scroll state + active link
   const nav = document.getElementById('nav');
